@@ -1,8 +1,15 @@
 import { MdTranslate } from "react-icons/md";
 import { FaCaretDown } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 let Header = () => {
+  const navigate = useNavigate();
+
+  let destination = () => {
+    navigate("/Signin");
+  };
+
   return (
     <div className="bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/c906271d-7184-4eec-83c9-b6d4c1a068ec/728874a6-eeda-400a-9bcf-a935a1408a4f/IN-en-20231127-popsignuptwoweeks-perspective_alpha_website_medium.jpg')] bg-no-repeat bg-cover h-[700px] sm:h-[780px] flex items-center flex-col justify-between before:bg-black before:absolute before:opacity-70 before:h-[590px] sm:before:h-[676px] xl:before:h-[756px] before:w-full sm:items-start xl:items-center md:before:h-[690px] xl:h-[860px]">
       <div className="w-[94vw] h-[8vh] z-10 p-6 flex justify-between items-center xl:mt-7">
@@ -29,13 +36,14 @@ let Header = () => {
             </div>
           </div>
 
-          <button className=" w-[85px] rounded h-full py-1 bg-red-600 hover:bg-red-700 px-4 text-base text-slate-50 font-semibold lg:w-[125px] lg:text-base xl:w-[85px]">
+          <button
+            className=" w-[85px] rounded h-full py-1 bg-red-600 hover:bg-red-700 px-4 text-base text-slate-50 font-semibold lg:w-[125px] lg:text-base xl:w-[85px]"
+            onClick={destination}
+          >
             Sign In
           </button>
         </div>
       </div>
-
-      {/* the unlimited movies block */}
 
       <div className=" w-[94vw] h-[345px] px-2 py-1 z-10 mt-[160px]  md:ml-[3vw] sm:h-[72vh] sm:w-[75vw] md:w-[62vw] md:h-[50vh] lg:w-[55vw] lg:px-5 lg:ml-8 lg:h-[55vh] xl:ml-[-300px] xl:h-[62vh]">
         <div className="w-full h-full flex flex-col justify-between">
@@ -76,8 +84,6 @@ let Header = () => {
           </div>
         </div>
       </div>
-
-      {/* the unlimited movies block */}
 
       <div className="z-10 h-[7rem] sm:h-[6.5rem] w-full overflow-hidden flex items-center justify-start">
         <img src="./public/curve.png" className="w-full h-full" alt="" />
