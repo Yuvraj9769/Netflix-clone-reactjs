@@ -23,7 +23,7 @@ let HeroCompo = () => {
   ];
 
   return (
-    <div className="bg-black w-full h-[1500px] flex justify-center items-center sm:mt-8 mb-8 lg:h-[965px] lg:mb-0 xl:mt-0 xl:h-[940px]">
+    <div className="bg-black w-full h-auto flex justify-center items-center sm:mt-8 mb-8 lg:mb-0 xl:mt-0 xl:h-auto">
       <div className="w-[94vw] py-1 flex items-start justify-center h-full lg:h-[90%] xl:h-full">
         <div className="h-[96%] flex flex-col items-center sm:w-[88vw] justify-around lg:justify-between lg:h-full xl:w-[90%] xl:h-[98%]">
           {/* Play games div */}
@@ -48,7 +48,7 @@ let HeroCompo = () => {
                   src="./public/gamesnetflix.png"
                   alt=""
                   height="200px"
-                  className="lg:w-full lg:h-full lg:hidden"
+                  className="w-full h-full lg:hidden"
                 />
                 <img
                   src="./public/newone-netflix.png"
