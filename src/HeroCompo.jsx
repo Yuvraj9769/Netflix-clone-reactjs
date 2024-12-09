@@ -3,27 +3,27 @@ let HeroCompo = () => {
     {
       title: "Enjoy on your TV",
       body: "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-      path: "./public/net-tv-1.png",
+      path: "/net-tv-1.png",
     },
     {
       title: "Download your shows to watch offline",
       body: "Save your favourites easily and always have something to watch.",
-      path: "./public/net-down-1.png",
+      path: "/net-down-1.png",
     },
     {
       title: "Watch everywhere",
       body: "Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.",
-      path: "./public/net-tele-1.png",
+      path: "/net-tele-1.png",
     },
     {
       title: "Create profiles for kids",
       body: "Send kids on adventures with their favourite characters in a space made just for them — free with your membership.",
-      path: "./public/net-kids-1.png",
+      path: "/net-kids-1.png",
     },
   ];
 
   return (
-    <div className="bg-black w-full h-[1500px] flex justify-center items-center sm:mt-8 mb-8 lg:h-[965px] lg:mb-0 xl:mt-0 xl:h-[940px]">
+    <div className="bg-black w-full h-auto flex justify-center items-center sm:mt-8 mb-8 lg:mb-0 xl:mt-0 xl:h-auto">
       <div className="w-[94vw] py-1 flex items-start justify-center h-full lg:h-[90%] xl:h-full">
         <div className="h-[96%] flex flex-col items-center sm:w-[88vw] justify-around lg:justify-between lg:h-full xl:w-[90%] xl:h-[98%]">
           {/* Play games div */}
@@ -45,13 +45,13 @@ let HeroCompo = () => {
               </div>
               <div className="overflow-hidden lg:self-end lg:h-full xl:h-full">
                 <img
-                  src="./public/gamesnetflix.png"
+                  src="/gamesnetflix.png"
                   alt=""
                   height="200px"
-                  className="lg:w-full lg:h-full lg:hidden"
+                  className="w-full h-full lg:hidden"
                 />
                 <img
-                  src="./public/newone-netflix.png"
+                  src="/newone-netflix.png"
                   alt=""
                   height="200px"
                   className="w-full h-full rounded-xl"

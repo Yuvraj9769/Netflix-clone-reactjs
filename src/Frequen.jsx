@@ -79,7 +79,7 @@ let Frequen = () => {
 
         {fredata.map((e, index) => (
           <div
-            className="mt-[10px] frediv min-h-[80px] pb-1 w-[97%] flex flex-col justify-between items-center xl:w-[69vw]"
+            className="mt-[10px] frediv min-h-[80px] pb-1 w-[97%] flex flex-col justify-between items-center xl:w-[69vw] hover:bg-[rgb(65,65,65)]"
             key={index}
           >
             <button

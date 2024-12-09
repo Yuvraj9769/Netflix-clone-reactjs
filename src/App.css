@@ -58,3 +58,27 @@
 .smtran {
     border: 1px solid rgba(128, 128, 128, 0.7);
 }
+
+.newnet {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.inp2:focus~.inpdiv2 {
+    border: 2px solid white;
+    outline: none;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.inp2:focus~.email {
+    font-size: small;
+    transform: translateY(-15px);
+}
+
+.borderbot {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+}
